@@ -11,5 +11,6 @@ import com.AsmaSouad.choreTracker.models.Job;
 public interface JobRepository extends CrudRepository<Job, Long> {
 	List<Job> findAll();
 	//Optional<Job> findById(Long id);
+	  List<Job> findByPickedBy(com.AsmaSouad.choreTracker.models.User pickedBy);
 
 }

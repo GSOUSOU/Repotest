@@ -46,14 +46,14 @@
                         <label for="password" class="col-sm-2 col-form-label">Password:</label>
                         <div class="col-sm-10">
                             <form:input path="password" type="password" id="password" class="form-control"/>
-                            <form:errors path="password" type="password" class="text-danger"/>
+                            <form:errors path="password"  class="text-danger"/>
                         </div>
                     </div>
                    <div class="form-group row my-3">
                         <label for="confirm" class="col-sm-2 col-form-label">Confirm PW:</label>
                         <div class="col-sm-10">
-                            <form:input path="confirm" id="confirm" class="form-control"/>
-                            <form:errors path="confirm"  type="password" class="text-danger"/>
+                            <form:input path="confirm" id="confirm" type="password" class="form-control"/>
+                            <form:errors path="confirm"   class="text-danger"/>
                         </div>
                     </div>
                     <div class="col-sm-12 text-center mt-3">
