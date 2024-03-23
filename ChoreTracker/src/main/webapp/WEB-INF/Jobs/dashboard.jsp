@@ -8,16 +8,15 @@
 <meta charset="ISO-8859-1">
 <title>Chore Tracker Dashboard</title>
   
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
 	rel="stylesheet">
 </head>
 <body>
 	<div class="container-fluid mt-3">
-		<div class="row ">
+		<div class="row p-4">
 			<div class="col-sm-10 ">
 				<div class="d-flex align-items-center">
-					<h5 class="mr-2 mb-0">welcome, ${loggedUser.getFirstName() }!</h5>
+					<h3 class="mr-5 mb-0">welcome, ${loggedUser.getFirstName() }!</h3>
 					<a href="/logout" class="btn btn-danger">Logout</a>
 				</div>
 			</div>
@@ -27,11 +26,9 @@
 			</div>
 		</div>
 
-		<div class="row"></div>
-	</div>
-	<div>
-		<h2>All Jobs</h2>
-		<table class="table table-bordered">
+		<div class="row p-4">
+		    <div class="col-sm-8">
+		    <table class="table table-bordered">
 			<thead class="thead-dark">
 				<tr>
 					<th>Job</th>
@@ -58,8 +55,10 @@
 				</c:forEach>
 			</tbody>
 		</table>
-
-		<h3>My Jobs</h3>
+		    
+		    </div>
+		    <div class="col-sm-4">
+		    
 		<table class="table table-bordered">
 			<thead class="thead-dark">
 				<tr>
@@ -80,7 +79,10 @@
 				</c:forEach>
 			</tbody>
 		</table>
+		    </div>
+		</div>
 	</div>
+	
 
 
 </body>

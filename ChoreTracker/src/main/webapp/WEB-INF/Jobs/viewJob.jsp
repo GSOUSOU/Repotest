@@ -7,35 +7,24 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title><c:out value="${job.title}" /></title>
-    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+    <title>View Job</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <style>
-        .card {
-            border: 1px solid #dee2e6;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease-in-out;
-        }
-
-        .card:hover {
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-        }
-    </style>
+    
 </head>
 <body>
-<div class="container mt-5">
+<div class="container-fluid mt-3">
     <div class="row">
         <div class="col-sm-10">
-            <div class="d-flex align-items-center">
-                <a href="/dashboard" class="btn btn-primary mr-2">Back</a>
-                <a href="/logout" class="btn btn-danger">Logout</a>
-            </div>
+         <div class="d-flex align-items-center justify-content-end">
+           <a href="/dashboard" class="btn btn-primary mr-3">Back</a>
+           <a href="/logout" class="btn btn-danger">Logout</a>
         </div>
+       </div>
     </div>
-    <div class="row mt-5">
-        <div class="col-md-6 mx-auto">
-            <div class="card">
+    <div class="row ">
+        <div class="col-sm-8">
+            <div class="card mb-3">
                 <div class="card-body">
                     <h5 class="card-title">${job.title}</h5>
                     <p class="card-text">${job.description}</p>
@@ -45,7 +34,8 @@
             </div>
         </div>
     </div>
-</div>
+
 <a href="/joinJob/${job.id}" class="btn btn-success">Add To My Jobs</a>
+</div>
 </body>
 </html>
